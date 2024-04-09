@@ -85,19 +85,25 @@
               </ul>
             </div>
           </nav>
-          <!-- #site-navigation -->
-
-          <div class="light-dark-mood-desk">
-            <input type="checkbox" id="toggle" />
-            <!--                    <input checked="--><!--" type="checkbox" id="toggle">-->
-            <!--                    <input type="checkbox" id="toggle">-->
+          <div class="btn-container">
+            <input
+              id="toggle-on"
+              class="toggle toggle-left"
+              name="toggle"
+              value="false"
+              type="radio"
+              checked
+            />
+            <label for="toggle-on" class="btn">AM</label>
+            <input
+              id="toggle-off"
+              class="toggle toggle-right"
+              name="toggle"
+              value="true"
+              type="radio"
+            />
+            <label for="toggle-off" class="btn">EN</label>
           </div>
-
-          <button
-            class="menu-toggle"
-            aria-controls="primary-menu"
-            aria-expanded="false"
-          ></button>
         </div>
       </div>
     </header>
@@ -105,7 +111,7 @@
       <div class="new-container">
         <div class="storm-all">
           <div class="title">
-            <a href="#" class="green_btn rounded">OFFLINE</a>
+            <p>OFFLINE</p>
             <h3>Manual QA Course</h3>
             <h5>Offline, by Vazgen Baghdasaryan</h5>
             <span>QA Engineer at Brainstorm</span>
@@ -120,7 +126,7 @@
               Manual QA with Storm School.
             </p>
           </div>
-          <a href="#" class="green_btn rounded">Join Now!</a>
+          <a href="#register_course_now" class="green_btn rounded">Join Now!</a>
           <img src="images/Bg-mobile.jpg" alt="mobile-img" class="mobile-img" />
         </div>
       </div>
@@ -192,7 +198,7 @@
       <div class="new-container">
         <div class="why-choose-all">
           <div class="why-choose-title">
-            <h5>Why choose StormSchool?</h5>
+            <h5>What You Will Get</h5>
           </div>
           <div class="why-choose-items why-choose-items-sec">
             <div class="item" style="background-color: #ffeeb6">
@@ -285,7 +291,9 @@
               </div>
             </div>
           </div>
-          <a href="#" class="green_btn rounded">Apply now!</a>
+          <a href="#register_course_now" class="green_btn rounded"
+            >Apply now!</a
+          >
         </div>
       </div>
     </section>
@@ -581,11 +589,14 @@
         </div>
       </div>
     </section>
-    <section class="register_course_now store-register_course_now_qu">
+    <section
+      class="register_course_now store-register_course_now_qu"
+      id="register_course_now"
+    >
       <div class="contact_form_sec">
         <div class="social-links">
           <div class="why-choose-title">
-            <h4>Register for courses now!</h4>
+            <h4>Register for this course now!</h4>
           </div>
           <ul class="why-choose-ul">
             <li>
@@ -799,6 +810,11 @@
         </div>
       </div>
     </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
