@@ -1,0 +1,34 @@
+<svg width="444" height="1146" viewBox="0 0 444 1146" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_10124_14373)">
+<rect x="232.594" y="2230.07" width="2230.07" height="266.17" transform="rotate(-90 232.594 2230.07)" fill="white"/>
+<rect x="232.594" y="2230.07" width="2230.07" height="266.17" transform="rotate(-90 232.594 2230.07)" stroke="#EAEAEA" stroke-width="1.54"/>
+<line x1="349.262" y1="-0.318359" x2="349.262" y2="2230.07" stroke="#EAEAEA" stroke-width="1.54"/>
+<line x1="487.891" y1="1056.4" x2="232.325" y2="1056.4" stroke="#EAEAEA" stroke-width="1.54"/>
+<line x1="487.898" y1="469.762" x2="232.333" y2="469.762" stroke="#EAEAEA" stroke-width="1.54"/>
+<line x1="487.898" y1="821.744" x2="232.333" y2="821.744" stroke="#EAEAEA" stroke-width="1.54"/>
+<line x1="487.891" y1="233.944" x2="232.325" y2="233.944" stroke="#EAEAEA" stroke-width="1.54"/>
+<line x1="487.898" y1="939.074" x2="232.333" y2="939.074" stroke="#EAEAEA" stroke-width="1.54"/>
+<line x1="487.898" y1="352.435" x2="232.333" y2="352.435" stroke="#EAEAEA" stroke-width="1.54"/>
+<line x1="487.898" y1="587.091" x2="232.333" y2="587.091" stroke="#EAEAEA" stroke-width="1.54"/>
+<line x1="487.898" y1="703.256" x2="232.333" y2="703.256" stroke="#EAEAEA" stroke-width="1.54"/>
+<line x1="487.891" y1="116.617" x2="232.325" y2="116.617" stroke="#EAEAEA" stroke-width="1.54"/>
+<path d="M0.796875 2230.39L0.796902 -0.000244141L233.129 -0.00024137L233.129 2230.39L0.796875 2230.39Z" fill="white"/>
+<path d="M232.359 -0.000241379L232.359 2230.39L233.899 2230.39L233.899 -0.000241361L232.359 -0.000241379Z" fill="#EAEAEA"/>
+<line x1="117.731" y1="0.000976572" x2="117.731" y2="2230.39" stroke="#EAEAEA" stroke-width="1.54"/>
+<line x1="256.359" y1="1056.72" x2="0.793976" y2="1056.72" stroke="#EAEAEA" stroke-width="1.54"/>
+<line x1="256.359" y1="470.082" x2="0.793976" y2="470.082" stroke="#EAEAEA" stroke-width="1.54"/>
+<line x1="256.359" y1="822.063" x2="0.793976" y2="822.063" stroke="#EAEAEA" stroke-width="1.54"/>
+<line x1="256.359" y1="234.263" x2="0.793976" y2="234.263" stroke="#EAEAEA" stroke-width="1.54"/>
+<line x1="256.359" y1="939.393" x2="0.793976" y2="939.393" stroke="#EAEAEA" stroke-width="1.54"/>
+<line x1="256.359" y1="352.754" x2="0.793976" y2="352.754" stroke="#EAEAEA" stroke-width="1.54"/>
+<line x1="256.359" y1="587.411" x2="0.793976" y2="587.411" stroke="#EAEAEA" stroke-width="1.54"/>
+<line x1="256.359" y1="703.576" x2="0.793976" y2="703.576" stroke="#EAEAEA" stroke-width="1.54"/>
+<line x1="256.359" y1="116.937" x2="0.793976" y2="116.937" stroke="#EAEAEA" stroke-width="1.54"/>
+</g>
+<path d="M1.54 1146V0H-1.54V1146H1.54Z" fill="#EAEAEA" mask="url(#path-1-inside-1_10124_14373)"/>
+<defs>
+<clipPath id="clip0_10124_14373">
+<path d="M0 0H462V1146H0V0Z" fill="white"/>
+</clipPath>
+</defs>
+</svg>

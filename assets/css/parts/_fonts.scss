@@ -1,0 +1,311 @@
+@font-face {
+  font-family: 'Inter-SemiBold';
+  src: url('../../fonts/Inter-SemiBold.woff') format('woff'),
+  url('../../fonts/Inter-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter-Regular';
+  src: url('../../fonts/Inter-Regular.woff') format('woff'),
+  url('../../fonts/Inter-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter-V';
+  src: url('../../fonts/Inter-v.woff') format('woff'),
+  url('../../fonts/Inter-v.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Mondwest';
+  src: url('../../fonts/Mondwest-Regular.woff') format('woff'),
+  url('../../fonts/Mondwest-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+html{
+  scroll-behavior: smooth !important;
+}
+
+body.dark {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+
+body {
+  font-family: "Inter-SemiBold";
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  font-weight: 300;
+}
+
+body a {
+  font-family: 'Inter-SemiBold';
+  color: #000;
+}
+body a:hover {
+  text-decoration: underline;
+}
+
+body strong {
+  font-family: 'Inter-SemiBold';
+  font-weight: bold;
+}
+
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-family: 'Inter-SemiBold';
+  letter-spacing: -0.03em;
+  font-weight: normal;
+}
+
+.h1 {
+  font-family: 'Inter-SemiBold';
+  font-size: 164px;
+  line-height: 153px;
+  letter-spacing: -0.065em;
+  color: #000000;
+}
+
+.h2 {
+  font-family: 'Inter-SemiBold';
+  font-size: 144px;
+  line-height: 140px;
+  letter-spacing: -0.05em;
+}
+
+.h3 {
+  font-family: 'ArticulatCF-DemiBold';
+  font-size: 182px;
+  line-height: 150px;
+  letter-spacing: -0.05em;
+}
+
+.h4 {
+  font-family: 'ArticulatCF-DemiBold';
+  font-size: 96px;
+  line-height: 80px;
+  letter-spacing: -0.05em;
+}
+
+
+/*body h1:not(:last-child), body h2:not(:last-child), body h3:not(:last-child), body h4:not(:last-child), body h5:not(:last-child), body h6:not(:last-child) {*/
+/*    margin-bottom: 40px;*/
+/*}*/
+
+body h1 {
+  font-family: 'Inter-SemiBold';
+  font-size: 136px;
+  line-height: 134px;
+  letter-spacing: -0.065em;
+}
+
+body h2 {
+  font-family: 'Mondwest';
+  font-size: 86px;
+  line-height: 82px;
+  letter-spacing: -0.04em;
+}
+
+body h3 {
+  font-family: 'Inter-SemiBold';
+  font-size: 80px;
+  line-height: 79px;
+  letter-spacing: -0.065em;
+}
+
+body h4 {
+  font-family: 'Inter-SemiBold';
+  font-size: 48px;
+  line-height: 47px;
+  letter-spacing: -0.065em;
+}
+
+body h5 {
+  font-family: 'Inter-SemiBold';
+  font-size: 36px;
+  line-height: 39px;
+  letter-spacing: -0.03em;
+}
+
+body h6 {
+  font-family: 'Mondwest';
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+}
+
+body h5, body h6 {
+  font-weight: normal;
+}
+
+body p {
+  font-family: 'Inter-Regular';
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.01em;
+  margin-bottom: 1em;
+}
+
+body .page-content ul,
+body .single-post-blog ol,
+body .single-post-blog ul{
+  font-family: 'Inter-Regular';
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 24px;
+}
+
+body .page-content ul li,
+body .single-post-blog ol li,
+body .single-post-blog ul li{
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+
+body .page-content ul li:before,
+body .single-post-blog ol li:before,
+body .single-post-blog ul li:before{
+  content: '*';
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+body a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+body iframe {
+  width: 100%;
+}
+
+body .aligncenter {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+body .alignleft {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+body .alignright {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+body hr {
+  border-top: 1px solid #ccc;
+  margin: 15px 0;
+}
+
+body hr.short {
+  max-width: 300px;
+  margin: 15px auto;
+}
+
+body .wp-caption {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 1000px) {
+  body .wp-caption {
+    margin-bottom: 10px;
+  }
+}
+
+body .wp-caption img {
+  background-color: white;
+}
+
+body .wp-caption-text, body .wp-thumbnail-caption {
+  line-height: 1.5em;
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-style: normal;
+  font-size: 16px;
+  color: #999;
+  padding: 15px 0 0 0;
+}
+
+@media (max-width: 1000px) {
+  body .wp-caption-text, body .wp-thumbnail-caption {
+    font-size: 15px;
+  }
+}
+
+body .wp-caption-text a, body .wp-thumbnail-caption a {
+  color: #777;
+  border: none;
+  text-decoration: none;
+}
+
+body .wp-caption-text a:hover, body .wp-thumbnail-caption a:hover, body .wp-caption-text a:focus, body .wp-thumbnail-caption a:focus, body .wp-caption-text a:active, body .wp-thumbnail-caption a:active {
+  color: #777;
+  border: none;
+  text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+  .h1 {
+    font-size: 288px;
+    line-height: 207px;
+  }
+
+  .h2 {
+    font-size: 144px;
+    line-height: 140px;
+  }
+}
+
+
+@media (max-width: 776px) {
+  body h1 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 23px;
+    letter-spacing: -0.03em;
+  }
+
+  body p {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+  }
+
+  body .page-content ul {
+    font-size: 13px;
+    line-height: 14px;
+    margin-bottom: 10px;
+  }
+
+  .h1 {
+    font-size: 96px;
+    line-height: 69px;
+    letter-spacing: -0.05em;
+  }
+
+  .h2 {
+    font-size: 96px;
+    line-height: 69px;
+    letter-spacing: -0.05em;
+  }
+}

@@ -1,0 +1,8 @@
+<svg width="182" height="182" viewBox="0 0 182 182" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M61 121L181 121L181 1.00002L61 1L61 121Z" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M1.00002 181L121 181L121 61L1.00003 61L1.00002 181Z" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M181 121L121 181" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M61 1.00001L1.00001 61" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M61 121L1.00001 181" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M121 61L181 1.00001" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+</svg>

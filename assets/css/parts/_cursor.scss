@@ -1,0 +1,98 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+// custom cursor style
+body {
+  & * {
+    cursor: none;
+  }
+  a{
+    cursor: none!important;
+  }
+  .point-cursor {
+    position: fixed;
+    border-radius: 50%;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center;
+    pointer-events: none;
+    z-index: 1000;
+    transition: opacity .3s;
+    @media(max-width: 991px) {
+      display: none;
+    }
+    &.default {
+      width: 20px;
+      height: 20px;
+      -webkit-transform: scale(1);
+          -ms-transform: scale(1);
+              transform: scale(1);
+      margin-left: -10px;
+      margin-top: -10px;
+      background: #FFFFFF;
+      border: 2px solid #000000;
+      -webkit-transition: background 0.3s ease, -webkit-transform 0.3s ease;
+      transition: background 0.3s ease, -webkit-transform 0.3s ease;
+      -o-transition: transform 0.3s ease, background 0.3s ease;
+      transition: transform 0.3s ease, background 0.3s ease;
+      transition: transform 0.3s ease, background 0.3s ease, -webkit-transform 0.3s ease;
+    }
+    &.link-hover {
+      opacity: 1;
+      width: 20px;
+      height: 20px;
+      margin-left: -10px;
+      margin-top: -10px;
+      border: 2px solid #000000;
+      -webkit-transform: scale(1.4);
+          -ms-transform: scale(1.4);
+              transform: scale(1.4);
+      background: #000000;
+      -webkit-transition: background 0.3s ease, -webkit-transform 0.3s ease;
+      transition: background 0.3s ease, -webkit-transform 0.3s ease;
+      -o-transition: transform 0.3s ease, background 0.3s ease;
+      transition: transform 0.3s ease, background 0.3s ease;
+      transition: transform 0.3s ease, background 0.3s ease, -webkit-transform 0.3s ease;
+    }
+    &.draw {
+      width: 130px;
+      height: 130px;
+      margin-left: -65px;
+      margin-top: -65px;
+      //-webkit-transform: scale(1);
+      //    -ms-transform: scale(1);
+      //        transform: scale(1);
+      background-image: url('../../images/hero/cursor-draw-big.svg');
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      -webkit-transition: background 0.3s ease;
+      -o-transition: background 0.3s ease;
+      transition: background 0.3s ease;
+    }
+  }
+  &.dark {
+    .point-cursor {
+      //background: #000;
+      //border: 2px solid #fff;
+      //transition: transform 0.3s ease;
+      //transform-origin: center center;
+      &.link-hover {
+        -webkit-transform: scale(1.4);
+            -ms-transform: scale(1.4);
+                transform: scale(1.4);
+        background: #FFFFFF;
+        border: 2px solid #fff;
+        -webkit-transition: -webkit-transform 0.3s ease;
+        transition: -webkit-transform 0.3s ease;
+        -o-transition: transform 0.3s ease;
+        transition: transform 0.3s ease;
+        transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+      }
+    }
+  }
+}

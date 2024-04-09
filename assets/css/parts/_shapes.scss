@@ -1,0 +1,167 @@
+body {
+
+  &.dark {
+    .floating-menu {
+      >div {
+        a {
+          color: #ffffff;
+          span {
+            color: #ffffff;
+          }
+        }
+        &.mood-bttn {
+          background-image: url('../../images/hero/mood-button-dark.svg');
+        }
+        &.ellipsis-shape {
+          background: #0047FF;
+          border: 4px solid #0047FF;
+        }
+        &.radius-shape {
+          background: #15CA68;
+          border: 4px solid #15CA68;
+        }
+        &.rectangle-shape {
+          background: #FF7D45;
+          border: 4px solid #FF7D45;
+          a {
+            .arrow {
+              filter: invert(100%) sepia(0%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(100%);
+            }
+          }
+        }
+        &.square-shape {
+          background: #FB0A52;
+          border: 4px solid #FB0A52;
+        }
+      }
+    }
+  }
+  &.loaded {
+    .floating-menu {
+      visibility: unset;
+    }
+  }
+  .floating-menu {
+    @media (max-width:997px){
+      display:none;
+    }
+    width: 100%;
+    height: 100%;
+    max-width: 1920px;
+    position: relative;
+    margin: 0 auto;
+    visibility: hidden;
+    >div {
+      z-index: 0;
+      &:not(.mood-bttn) {
+        opacity: 0.3;
+        transition: 0.5s;
+      }
+      a {
+        @extend .flex;
+        @extend .fac;
+        @extend .fjc;
+        @extend .fdc;
+        font-family: 'Inter-SemiBold';
+        font-size: 36px;
+        line-height: 39px;
+        width: 100%;
+        height: 100%;
+        text-decoration: unset;
+
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        letter-spacing: -0.03em;
+
+        span {
+          display: block;
+          text-align: center;
+          font-size: 15px;
+          line-height: 18px;
+          letter-spacing: -0.03em;
+          //transition: .3s;
+        }
+      }
+      &.mood-bttn {
+        position: absolute;
+        top: 88px;
+        right: 118px;
+        width: 230px;
+        height: 270px;
+        background-image: url('../../images/hero/mood-button.svg');
+        background-position: left bottom;
+        background-repeat: no-repeat;
+        //transition: .3s;
+      }
+      &.ellipsis-shape {
+        width: 250px;
+        height: 183px;
+        background: #14D5FF;
+        border: 4px solid #000000;
+        transform: rotate(7.2deg);
+        border-radius: 50%;
+        position: relative;
+        top: 1%;
+        left: 61%;
+        @media(max-width: 1441px) {
+          width: 230px;
+          height: 163px;
+        }
+      }
+      &.radius-shape {
+        height: 128px;
+        width: 239px;
+        background: #14FF80;
+        border: 4px solid #000000;
+        border-radius: 64px;
+        transform: rotate(4.09deg);
+        position: absolute;
+        left: 15%;
+        top: 25%;
+      }
+      &.rectangle-shape {
+        height: 73px;
+        width: 360px;
+        background: #FAFF14;
+        border: 4px solid #000000;
+        transform: rotate(4.01deg);
+        position: absolute;
+        right: 28%;
+        bottom: 11%;
+        a {
+          flex-direction: row;
+          .arrow {
+            margin-left: 15px;
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background-image: url('../../images/hero/arrow.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            //transition: .3s;
+          }
+        }
+      }
+      &.square-shape {
+        height: 95px;
+        width: 223px;
+        background: #FFA114;
+        border: 4px solid #000000;
+        transform: rotate(-4.86deg);
+        position: absolute;
+        left: 11%;
+        bottom: 3%;
+        span {
+          font-size: 10px;
+          line-height: 12px;
+          letter-spacing: -0.03em;
+        }
+      }
+    }
+  }
+}
+

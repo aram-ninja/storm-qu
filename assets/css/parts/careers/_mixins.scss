@@ -1,0 +1,86 @@
+@use "sass:math";
+
+$font-lock-min:  767px !default;
+$font-lock-max: 1921px !default;
+
+//  font-size
+@mixin font-size(
+  $min,                         // font-size
+  $max: null,                   // optional maximum font size
+  $lock-min: $font-lock-min,  // optional minimum viewport width
+  $lock-max: $font-lock-max   // optional maximum viewport width
+){
+  & { font-size: $min; line-height: $min; }
+  @if $max {
+    @media (min-width: $lock-min) {
+      & {
+        font-size: calc(
+                #{$min} +
+                #{num($max) - num($min)} *
+                (100vw - #{$lock-min}) /
+                #{num($lock-max) - num($lock-min)}
+        );
+        line-height: calc(
+                #{$min + 10} +
+                #{num($max) - num($min)} *
+                (100vw - #{$lock-min}) /
+                #{num($lock-max) - num($lock-min)}
+        );
+      }
+    }
+    @media (min-width: $lock-max){
+      & { font-size: $max; line-height: $max }
+    }
+  }
+}
+
+//  strip units helper function
+@function num($input){
+  @return math.div($input, $input * 0 + 1);
+}
+
+
+body.single-careers h1 {
+  @include font-size(60px, 80px);
+  letter-spacing: -0.065em;
+}
+
+body.single-careers h2 {
+  @include font-size(50px, 66px);
+  letter-spacing: -0.03em;
+}
+
+body.single-careers h3 {
+  @include font-size(45px, 55px);
+  letter-spacing: -0.03em;
+}
+
+body.single-careers h4 {
+  @include font-size(35px, 45px);
+  letter-spacing: -0.03em;
+}
+
+body.single-careers h5 {
+  @include font-size(26px, 36px);
+  letter-spacing: -0.03em;
+}
+
+body.single-careers h6 {
+  @include font-size(16px, 26px);
+  letter-spacing: -0.03em;
+}
+
+body.single-careers p {
+  @include font-size(15px, 16px);
+  letter-spacing: -0.01em;
+}
+
+body.single-careers a {
+  @include font-size(15px, 16px);
+  letter-spacing: -0.01em;
+}
+
+body.single-careers ul li {
+  @include font-size(15px, 16px);
+  letter-spacing: -0.01em;
+}

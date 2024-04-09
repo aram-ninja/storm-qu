@@ -1,0 +1,409 @@
+body.dark {
+  a {
+    color: #FFFFFF!important;
+  }
+  .careers {
+    .title h1 {
+      color: #fff;
+    }
+    .all-items {
+      .item-left {
+        .career-icon {
+          filter: invert(100%) sepia(0%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(100%);
+        }
+      }
+      .item-right {
+        color: #fff;
+      }
+    }
+  }
+  hr {
+    border: 1px solid #373737;
+  }
+}
+.page-template-careers {
+  main {
+    @media (max-width: 997px) {
+      overflow-x: hidden;
+    }
+  }
+}
+.careers {
+  position: relative;
+  @media(max-width: 991px) {
+    padding-top: 116px;
+
+  }
+  .pluses {
+    background-image: url("../../images/projects/grid_bg.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    width: 75%;
+    height: 29%;
+    z-index: 0;
+    @media(max-width: 778px) {
+      background-image: url("../../images/projects/grid_bg_mob.svg");
+      background-repeat: repeat-y;
+      background-position: center;
+    }
+  }
+  .container-fluid {
+    position: relative;
+    .title {
+      margin: 151px 0 260px 0;
+      max-width: 1272px;
+      @media (max-width: 997px) {
+        margin: 0px 0 84px 0;
+      }
+      h1 {
+        @media (max-width: 1379px) {
+          font-size: 96px;
+          line-height: 96px;
+          letter-spacing: -0.065em;
+        }
+        @media (max-width: 997px) {
+          font-size: 60px;
+          line-height: 60px;
+          letter-spacing: -0.065em;
+        }
+      }
+    }
+    .all-items {
+      max-width: 1633px;
+      margin-bottom: 359px;
+      display: flex;
+      flex-wrap: wrap;
+      @media (max-width: 1600px) {
+        margin-bottom: 250px;
+      }
+      @media (max-width: 997px) {
+        margin-bottom: 167px;
+      }
+      .item {
+        display: flex;
+        width: 33.3%;
+        margin-bottom: 90px;
+        z-index: 10;
+        @media (max-width: 997px) {
+          width: 50%;
+          margin-bottom: 37px;
+        }
+        .item-right {
+          max-width: 306px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          transition: .3s;
+          @media (max-width: 767px) {
+            max-width: 160px;
+          }
+        }
+        a.square {
+          display: flex;
+          width: 100%;
+          @media (max-width: 767px) {
+            flex-direction: column;
+          }
+          .item-left {
+            margin-right: 35px;
+            max-width: 125px;
+            width: 100%;
+            height: 125px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            .career-icon {
+              max-width: 125px;
+              width: 100%;
+              height: 125px;
+              background-size: cover;
+              background-position: center;
+              background-repeat: no-repeat;
+              @media (max-width: 767px) {
+                max-width: 88px;
+                height: 88px;
+              }
+            }
+            @media (max-width: 767px) {
+              max-width: 88px;
+              height: 88px;
+              margin-right: 0;
+              margin-bottom: 16px;
+            }
+          }
+          .item-left::before {
+            content: '';
+            background-image: url(../../images/careers/square-green.svg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 61px;
+            height: 61px;
+            z-index: -1;
+            position: absolute;
+            top: 26%;
+            left: 25%;
+            transition: all 0.3s ease-in-out;
+            @media (max-width: 767px) {
+              width: 59px;
+              height: 59px;
+              top: 17%;
+              left: 12%;
+            }
+          }
+          .item-right {
+            h4 {
+              transition: all 0.3s ease-in-out;
+              font-size: 48px;
+              @media (max-width: 1500px) {
+                font-size: 38px;
+                line-height: 38px;
+              }
+              @media (max-width: 1325px) {
+                font-size: 30px;
+                line-height: 30px;
+              }
+              @media (max-width: 1030px) {
+                font-size: 24px;
+              }
+            }
+            span {
+              margin-top: 19px;
+              @media (max-width: 767px) {
+                font-size: 12px;
+                margin-top: 8px;
+              }
+            }
+          }
+        }
+        a.circle {
+          display: flex;
+          width: 100%;
+          @media (max-width: 767px) {
+            flex-direction: column;
+          }
+          .item-left {
+            margin-right: 35px;
+            max-width: 125px;
+            width: 100%;
+            height: 125px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            .career-icon {
+              max-width: 125px;
+              width: 100%;
+              height: 125px;
+              background-size: cover;
+              background-position: center;
+              background-repeat: no-repeat;
+              @media (max-width: 767px) {
+                max-width: 95px;
+                height: 95px;
+              }
+            }
+            @media (max-width: 767px) {
+              max-width: 95px;
+              height: 95px;
+              margin-right: 0;
+              margin-bottom: 16px;
+            }
+          }
+          .item-left::before {
+            content: '';
+            background-image: url(../../images/careers/circle-blue.svg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 78px;
+            height: 78px;
+            z-index: -1;
+            position: absolute;
+            top: 19%;
+            left: 18%;
+            transition: all 0.3s ease-in-out;
+            @media (max-width: 767px) {
+              width: 59px;
+              height: 59px;
+              top: 20%;
+              left: 18%;
+            }
+          }
+          .item-right {
+            h4 {
+              transition: all 0.3s ease-in-out;
+              font-size: 48px;
+              @media (max-width: 1500px) {
+                font-size: 38px;
+                line-height: 38px;
+              }
+              @media (max-width: 1325px) {
+                font-size: 30px;
+                line-height: 30px;
+              }
+              @media (max-width: 1030px) {
+                font-size: 24px;
+              }
+            }
+            span {
+              margin-top: 19px;
+              @media (max-width: 767px) {
+                font-size: 12px;
+                margin-top: 8px;
+              }
+            }
+          }
+        }
+        a.triangle {
+          display: flex;
+          width: 100%;
+          @media (max-width: 767px) {
+            flex-direction: column;
+          }
+          .item-left {
+            margin-right: 35px;
+            max-width: 137px;
+            width: 100%;
+            height: 125px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            .career-icon {
+              max-width: 137px;
+              width: 100%;
+              height: 125px;
+              background-size: cover;
+              background-position: center;
+              background-repeat: no-repeat;
+              @media (max-width: 767px) {
+                 max-width: 96px;
+                height: 88px;
+              }
+            }
+            @media (max-width: 767px) {
+              margin-right: 0;
+              margin-bottom: 16px;
+              max-width: 96px;
+              height: 88px;
+            }
+          }
+          .item-left::before {
+            content: '';
+            background-image: url(../../images/careers/triangle-red.svg);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 68px;
+            height: 68px;
+            z-index: -1;
+            position: absolute;
+            top: 35%;
+            left: 29%;
+            transition: all 0.3s ease-in-out;
+            @media (max-width: 767px) {
+              width: 48px;
+              height: 48px;
+              top: 37%;
+              left: 27%;
+            }
+          }
+          .item-right {
+            h4 {
+              transition: all 0.3s ease-in-out;
+              font-size: 48px;
+              @media (max-width: 1500px) {
+                font-size: 38px;
+                line-height: 38px;
+              }
+              @media (max-width: 1325px) {
+                font-size: 30px;
+                line-height: 30px;
+              }
+              @media (max-width: 1030px) {
+                font-size: 24px;
+              }
+            }
+            span {
+              margin-top: 19px;
+              @media (max-width: 767px) {
+                font-size: 12px;
+                margin-top: 8px;
+              }
+            }
+          }
+        }
+      }
+      .item:nth-last-child(-n + 3) {
+        margin-bottom: 0;
+        @media (max-width: 997px) {
+          margin-bottom: 37px;
+        }
+      }
+      .item:hover {
+        .item-right {
+          margin-top: -10px;
+          margin-bottom: 10px;
+          h4 {
+            text-decoration: underline;
+          }
+        }
+        a.square {
+          .item-left::before {
+            transform: rotate(30.48deg) scale(1.8);
+          }
+        }
+        a.circle {
+          .item-left::before {
+            transform: scale(1.3);
+          }
+        }
+        a.triangle {
+          .item-left::before {
+            transform: rotate(30.48deg) scale(1.5);
+          }
+        }
+      }
+    }
+  }
+  hr {
+    transform: rotate(90deg);
+    width: 6550px;
+    margin-left: -1641px;
+    border: 1px solid #EAEAEA;
+    z-index: -1;
+    @media (max-width: 1650px) {
+      margin-left: -1650px;
+      width: 6280px;
+    }
+    @media (max-width: 1550px) {
+      margin-left: -1600px;
+      width: 5960px;
+    }
+    @media (max-width: 1400px) {
+      margin-left: -1580px;
+      width: 5750px;
+    }
+    @media (max-width: 1300px) {
+      width: 5560px;
+    }
+    @media (max-width: 1270px) {
+      width: 5665px;
+      margin-left: -1700px;
+    }
+    @media (max-width: 1150px) {
+      width: 5550px;
+    }
+    @media (max-width: 1080px) {
+      width: 5490px;
+      margin-left: -1770px;
+    }
+    @media (max-width: 997px) {
+      display: none;
+    }
+  }
+}

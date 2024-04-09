@@ -1,0 +1,274 @@
+.dark{
+  .careers_page{
+    h1, h2, h3, span:not(.green, .blue) {
+      color: #ffffff;
+    }
+    .careers_fields{
+      a:hover{
+        text-decoration-color: #ffffff;
+      }
+      border-bottom: 1px solid #494949;
+      &_title{
+        max-width: 1273px;
+      }
+    }
+    .growth{
+      border-bottom: 1px solid #494949;
+    }
+  }
+}
+
+.careers_page{
+    font-family: Inter, sans-serif;
+    p, span{
+      font-family: Inter, sans-serif;
+    }
+
+  //.container-fluid {
+  //  padding-top: 151px;
+    h1, h2, h3{
+      font-family: Inter, sans-serif;
+    }
+    h1{
+      font-size: 100px;
+      font-weight: 900;
+      line-height: 98px;
+      letter-spacing: -0.05em;
+      margin-bottom: 48px;
+      @media (max-width: 768px) {
+        font-size: 46px;
+        line-height: 45px;
+        margin-bottom: 54px;
+      }
+    }
+    h2{
+      font-size: 64px;
+      font-weight: 900;
+      line-height: 63px;
+      letter-spacing: -0.05em;
+      @media (max-width: 768px){
+        font-size: 36px;
+        line-height: 44px;
+      }
+    }
+    h3{
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 39px;
+      letter-spacing: -0.05em;
+      @media (max-width: 768px){
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+    p{
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: -0.02em;
+      @media (max-width: 768px){
+        font-size: 16px;
+        line-height: 26px;
+      }
+    }
+    .green{
+      color: #A9FF3C;
+    }
+    .careers_fields {
+      padding-top: 151px;
+      padding-bottom: 78px;
+      @media (max-width: 768px){
+        padding-bottom: 72px;
+      }
+      &_title{
+        max-width: 1273px;
+      }
+      &_items {
+        display: grid;
+        grid-row-gap: 52px;
+        //grid-column-gap: 43px;
+        grid-template-columns: auto auto auto;
+        //grid-template-columns: 1fr 1fr 1fr;
+        max-width: 1205px;
+        justify-content: space-between;
+        @media (max-width: 1199px){
+          grid-template-columns: 1fr 1fr;
+        }
+        @media (max-width: 768px){
+          grid-template-columns: 1fr;
+          max-width: 256px;
+          grid-row-gap: 36px;
+        }
+        .item{
+          width: fit-content;
+          &_title{
+            max-width: 313px;
+          }
+          &_link{
+            display: flex;
+            align-items: flex-start;
+            gap: 25px;
+            @media (max-width: 768px){
+              gap: 20px;
+            }
+          }
+          &_img{
+            max-width: 56px;
+          }
+          &_location {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 29px;
+            letter-spacing: -0.02em;
+            @media (max-width: 768px){
+              font-size: 15px;
+              line-height: 24px;
+              letter-spacing: -0.01em;
+
+            }
+          }
+        }
+      }
+    }
+    .growth{
+      padding: 124px 0;
+      color: #ffffff;
+      background-color: #000000;
+      @media (max-width: 768px){
+        padding: 56px 0;
+      }
+      &_row{
+        display: flex;
+        justify-content: space-between;
+        //gap: 103px;
+        @media (max-width: 1199px){
+          flex-direction: column;
+          gap: 48px;
+        }
+      }
+      &_col_left{
+        max-width: 557px;
+        h2{
+          margin-bottom: 24px;
+          max-width: 90%;
+        }
+      }
+      &_col_right {
+        //column-count: 2;
+        //column-gap: 25px;
+        max-width: 692px;
+        //img{
+        //  width: 100%;
+        //  margin-bottom: 24px;
+        //}
+        .growth_gallery{
+          width: 100%;
+        }
+        .growth_gallery_mobile{
+          display: none;
+        }
+        @media (max-width: 1199px){
+          //column-count: 1;
+          max-width: 100%;
+          .growth_gallery{
+            display: none;
+          }
+          .growth_gallery_mobile{
+            display: block;
+          }
+          //img{
+          //  margin-bottom: 48px;
+          //  &:last-child{
+          //    margin-bottom: 0px;
+          //  }
+          //}
+        }
+      }
+    }
+    .join_us{
+      padding: 120px 0;
+      @media (max-width: 768px){
+        padding: 56px 0;
+      }
+      &_title{
+        max-width: 626px;
+        margin-bottom: 60px;
+        h2{
+          margin-bottom: 40px;
+        }
+      }
+      &_benefits{
+        display: grid;
+        grid-row-gap: 45px;
+        justify-content: space-between;
+        grid-template-columns: 350px 350px 350px;
+        max-width: 1154px;
+        @media (max-width: 1199px){
+          grid-template-columns: 1fr 1fr;
+        }
+        @media (max-width: 768px){
+          grid-template-columns: 1fr;
+        }
+        .item{
+          max-width: 350px;
+          &_icon{
+            width: 56px;
+            height: 56px;
+            margin-bottom: 24px;
+          }
+          &_title{
+            margin-bottom: 8px;
+          }
+          &_desc{
+            font-size: 14px;
+            line-height: 22px;
+          }
+        }
+      }
+
+
+    }
+    .our_services {
+      padding-bottom: 0;
+       .contact_form_sec, .title_container{
+         margin-top: 0px;
+       }
+       .contact_form_sec{
+         padding-bottom: 124px;
+         margin-bottom: 124px;
+         border-bottom: 1px solid #CCCCCC;
+         @media (max-width: 768px){
+           padding-bottom: 64px;
+           margin-bottom: 64px;
+           .form_title h2{
+             max-width: 65%;
+           }
+         }
+       }
+      .container-fluid{
+        @media (max-width: 997px){
+          padding-left: 44px;
+          padding-right: 44px;
+        }
+        @media (max-width: 768px){
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+      }
+
+     }
+    .inner_page_content-cards{
+      margin-bottom: 124px;
+      @media (max-width: 768px){
+        margin-bottom: 80px;
+      }
+    }
+  //}
+}
+
+body.single-careers h1{
+  @media (max-width: 768px) {
+    font-size: 46px;
+    line-height: 45px;
+  }
+}
